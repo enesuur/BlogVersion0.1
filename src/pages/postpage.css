@@ -1,0 +1,38 @@
+.newspage-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    margin-top: 72px;
+    gap: 24px;
+    max-width: 1280px;
+    width: 1280px;
+}
+
+.content .main-content {
+    flex-basis: 80%;
+    border-radius: 10px;
+    gap: 24px;
+}
+
+.content .main-content {
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}
+
+.main-content .main-content-header {
+    font-size: 1.64em;
+
+}
+
+.support-content {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+}

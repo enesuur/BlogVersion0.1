@@ -1,0 +1,64 @@
+.cosplaypage-container {
+    display: flex;
+    flex-wrap: wrap;
+    overflow-x: hidden;
+}
+
+.slider {
+    flex-basis: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.content {
+    display: flex;
+    margin: auto;
+    margin-top: 72px;
+    gap: 24px;
+    max-width: 1280px;
+}
+
+.content .main-content {
+    flex-basis: 80%;
+    border-radius: 10px;
+    gap: 24px;
+}
+
+.support-content {
+    flex-basis: 20%;
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+}
+
+.posts {
+    flex-basis: 100%;
+}
+
+/* Responsive styles */
+@media screen and (max-width: 768px) {
+    .content {
+        flex-direction: column;
+        margin-top: 48px;
+    }
+
+    .content .main-content {
+        flex-basis: 100%;
+        border-radius: 0;
+    }
+
+    .support-content {
+        flex-basis: 100%;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .content {
+        margin-top: 24px;
+    }
+
+    .content .main-content,
+    .support-content {
+        gap: 16px;
+    }
+}

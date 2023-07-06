@@ -1,25 +1,34 @@
-import logo from './logo.svg';
-import './App.css';
+// App.js
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import AuthLayout from './Layouts/AuthLayout';
+import HomePage from './pages/HomePage';
+import BlogsPage from './pages/BlogsPage';
+import CosplayPage from './pages/CosplayPage';
+import Signup from './components/Signup/Signup';
+import Signin from './components/Signin/Signin';
+import NewsPage from './pages/NewsPage';
+import PostPage from './pages/PostPage';
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Routes>
+          <Route index={true} element={<HomePage/>}/>
+          <Route path='post/kontak' element={<PostPage/>}/>
+          <Route path='news' element={<NewsPage/>}/>
+          <Route path='/cosplay' element={<CosplayPage/>}/>
+          <Route path='/blogs' element={<BlogsPage/>}/>
+          <Route path='/auth' element={<AuthLayout/>}>
+          <Route path='signup' element={<Signup/>}></Route>
+          <Route path='signin' element={<Signin/>}></Route>
+          
+          
+
+        </Route>
+      </Routes>
+    </>
   );
-}
+};
 
 export default App;

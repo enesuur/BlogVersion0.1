@@ -1,0 +1,153 @@
+.navbar-container {
+    width: 100vw;
+    height: 96px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background: orange;
+    color: #f2f2f2;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.5);
+}
+
+.navbar-header {
+    letter-spacing: 2.4px;
+    font-size: 2.4em;
+    color: #f2f2f2;
+}
+
+.navbar-header:hover {
+    cursor: pointer;
+}
+
+.navbar-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    list-style: none;
+}
+
+
+.navbar-section li a {
+    cursor: pointer;
+    padding: 12px;
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.navbar-section li a:hover {
+    cursor: pointer;
+    background-color: orange;
+    border-radius: 2px;
+}
+
+.navbar-auth {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    list-style: none;
+}
+
+.navbar-auth li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 8px;
+    cursor: pointer;
+    padding: 12px;
+}
+
+
+.navbar-auth li a {
+    text-decoration: none;
+    color: #f2f2f2;
+}
+
+.navbar-auth :hover {
+    background-color: orange;
+    border-radius: 2px;
+}
+
+.hamburger-menu {
+    position: absolute;
+    display: none;
+}
+
+.close-menu {
+    display: none;
+}
+
+@media (max-width: 768px) {
+
+    /* Adjust navbar for smaller screens */
+
+    .hamburger-menu {
+        display: block;
+        font-size: 36px;
+        right: 0px;
+        top: 0px;
+        margin-right: 4px;
+        margin-top: 8px;
+    }
+
+    .navbar-container {
+        height: auto;
+        flex-direction: column;
+        padding: 12px;
+    }
+
+    .navbar-section {
+        margin-top: 24px;
+        width: 100%;
+        gap: 16px;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .navbar-section li {
+        padding: 16px;
+        text-align: center;
+        text-decoration: underline;
+        text-decoration-color: orange;
+    }
+
+    .navbar-section li a {
+        display: block;
+    }
+
+    .navbar-auth {
+        flex-direction: column;
+        width: 100%;
+        gap: 16px;
+        align-items: center;
+    }
+
+    .navbar-auth li {
+        width: 100%;
+        padding: 16px;
+        justify-content: center;
+    }
+
+    .navbar-auth li i {
+        display: none;
+    }
+}
+
+@media (max-width: 480px) {
+
+    /* Further adjustments for even smaller screens */
+    .navbar-container {
+        padding: 8px;
+    }
+
+    .navbar-header {
+        font-size: 2em;
+    }
+
+
+    .navbar-section li,
+    .navbar-auth li {
+        padding: 4px;
+    }
+}

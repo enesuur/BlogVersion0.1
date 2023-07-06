@@ -1,0 +1,9 @@
+.posts-container {
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    max-width: 1280px;
+    gap: 1.8em;
+    border-radius: 10px;
+    height: auto;
+}

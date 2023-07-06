@@ -1,0 +1,6 @@
+.cosplays-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 24px;
+    padding: 12px 2px;
+}
